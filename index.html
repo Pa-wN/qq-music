@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>qq-music</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./static/logo.svg" alt="qq音乐">
+        </div>
+        <div class="player-open">
+            <img src="" alt="">
+        </div>
+    </header>
+    <nav class="index-nav">
+        <ul class="nav-list">
+            <li class="nav-item active" data-to="recommend">
+                推荐
+            </li>
+            <li class="nav-item" data-to="rank">
+                排行榜
+            </li>
+            <li class="nav-item" data-to="search">
+                搜索
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="recommend-view show" data-view='recommend'>
+            <div class="slide-wrap"></div>
+            <scetion class="radio-block">
+                <h2 class="title">电台</h2>
+                <ul class="list" data-radio-view>
+                </ul>
+            </scetion>
+            <scetion class="hot-block">
+                <h2 class="title">热门歌单</h2>
+                <ul class="list" data-hot-view>
+                </ul>
+            </scetion>
+        </section>
+        <section class="rank-view" data-view="rank">
+            <div class="rank-topic">
+                <ul data-rankList-view>
+                </ul>
+            </div>
+        </section>
+        <section class="search-view" data-view="search">
+            <div class="search-bar">
+                <i class="search-icon"></i>
+                <input type="text" id="searchInp" class="search-inp" placeholder="搜索歌曲、歌单、专辑">
+                <span class="clear" id="clearBtn">取消</span>
+            </div>
+            <div class="hot-search" id="hotSearch">
+                <h2 class="hot-txt">热门搜索</h2>
+                <ul class="hot-list" data-hotSearch-view>
+                </ul>
+            </div>
+            <div class="history-search" style="display: none" id="historySearch">
+                <ul class="history-list" data-history-view>
+
+                </ul>
+            </div>
+            <div class="search-con" style="display: none" id="searchCon">
+                <div class="search-loading"></div>
+                <ul class="search-list" data-searchCon-view>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="toplist">
+        <i class="back"></i>
+        <div class="toplist-pic">
+            <img src="" alt="" class="toplist-img">
+        </div>
+        <ul class="list"></ul>
+    </div>
+    <div class="player">
+        <div class="player-bg"></div>
+        <div class="up"></div>
+        <div class="player-header">
+            <div class="opacity-bg"></div>
+            <img src="./static/pic.png" alt="" class="song-pic">
+            <div class="song-info">
+                <p class="song-name">魔法城堡</p>
+                <p class="singer">TFBOYS</p>
+            </div>
+            <div class="toggle-btn"></div>
+        </div>
+        <div class="lyric-wrap">
+            <ul class="lyric-list">
+            </ul>
+        </div>
+        <div class="progress">
+            <span class="play-time">00: 00</span>
+            <div class="progress-bar">
+                <div class="progress-bar-progress"></div>
+            </div>
+            <span class="song-time">00: 00</span>
+        </div>
+        <audio src="" id="audio"></audio>
+    </div>
+    <div class="loading">
+        <img src="./static/icon_loading.gif" alt="正在加载">
+    </div>
+    <script src="./scripts/slide.js"></script>
+    <script src="./scripts/tab.js"></script>
+    <script src="./scripts/lazyload.js"></script>
+    <script src="./scripts/loading.js"></script>
+
+    <script src="./scripts/progressBar.js"></script>
+    <script src="./scripts/music-url.js"></script>
+    <script src="./scripts/music-api.js"></script>
+    <script src="./scripts/lyric.js"></script>
+
+    <script src="./scripts/topList.js"></script>
+
+    <script src="./scripts/ranking.js"></script>
+    <script src="./scripts/recommend.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

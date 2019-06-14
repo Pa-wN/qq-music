@@ -1,0 +1,367 @@
+{
+    "code": 0,
+    "subcode": 0,
+    "message": "",
+    "default": 0,
+    "data": {
+        "topList": [
+            {
+                "id": 4,
+                "listenCount": 19100000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002z1vVu1CMaoM.jpg",
+                "songList": [
+                    {
+                        "singername": "焦迈奇",
+                        "songname": "我的名字"
+                    },
+                    {
+                        "singername": "汪苏泷",
+                        "songname": "耿"
+                    },
+                    {
+                        "singername": "The Chainsmokers/Bebe Rexha",
+                        "songname": "Call You Mine"
+                    }
+                ],
+                "topTitle": "巅峰榜·流行指数",
+                "type": 0
+            },
+            {
+                "id": 26,
+                "listenCount": 19300000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003m8liF01kFPL.jpg",
+                "songList": [
+                    {
+                        "singername": "G.E.M. 邓紫棋",
+                        "songname": "来自天堂的魔鬼"
+                    },
+                    {
+                        "singername": "陈雪凝",
+                        "songname": "你的酒馆对我打了烊"
+                    },
+                    {
+                        "singername": "焦迈奇",
+                        "songname": "我的名字"
+                    }
+                ],
+                "topTitle": "巅峰榜·热歌",
+                "type": 0
+            },
+            {
+                "id": 27,
+                "listenCount": 3453860,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001d6KuB09vvXA.jpg",
+                "songList": [
+                    {
+                        "singername": "汪苏泷",
+                        "songname": "耿"
+                    },
+                    {
+                        "singername": "The Chainsmokers/Bebe Rexha",
+                        "songname": "Call You Mine"
+                    },
+                    {
+                        "singername": "Olly Murs/摩登兄弟/CORSAK",
+                        "songname": "That Girl (CORSAK Remix)"
+                    }
+                ],
+                "topTitle": "巅峰榜·新歌",
+                "type": 0
+            },
+            {
+                "id": 58,
+                "listenCount": 6463620,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004AEn7D1iQcbm.jpg",
+                "songList": [
+                    {
+                        "singername": "孟子坤",
+                        "songname": "TELL ME WHY"
+                    },
+                    {
+                        "singername": "吴亦凡",
+                        "songname": "大碗宽面"
+                    },
+                    {
+                        "singername": "MC HotDog/张震岳",
+                        "songname": "改变"
+                    }
+                ],
+                "topTitle": "说唱榜",
+                "type": 0
+            },
+            {
+                "id": 57,
+                "listenCount": 3882820,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002LlrsW1KojIz.jpg",
+                "songList": [
+                    {
+                        "singername": "The Chainsmokers/Bebe Rexha",
+                        "songname": "Call You Mine"
+                    },
+                    {
+                        "singername": "Kygo/Chelsea Cutler",
+                        "songname": "Not Ok"
+                    },
+                    {
+                        "singername": "Vicetone/Daisy Guttridge/Eric Leva",
+                        "songname": "Waiting"
+                    }
+                ],
+                "topTitle": "电音榜",
+                "type": 0
+            },
+            {
+                "id": 28,
+                "listenCount": 10372120,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004YwPdW4UeYl6.jpg",
+                "songList": [
+                    {
+                        "singername": "魏新雨",
+                        "songname": "余情未了"
+                    },
+                    {
+                        "singername": "杨胖雨",
+                        "songname": "情深深雨濛濛"
+                    },
+                    {
+                        "singername": "Ice paper",
+                        "songname": "心如止水"
+                    }
+                ],
+                "topTitle": "巅峰榜·网络歌曲",
+                "type": 0
+            },
+            {
+                "id": 5,
+                "listenCount": 6674120,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001fKWgq0Ylkw4.jpg",
+                "songList": [
+                    {
+                        "singername": "周深",
+                        "songname": "拙慕"
+                    },
+                    {
+                        "singername": "汪苏泷",
+                        "songname": "耿"
+                    },
+                    {
+                        "singername": "黄子韬",
+                        "songname": "你也会像我一样"
+                    }
+                ],
+                "topTitle": "巅峰榜·内地",
+                "type": 0
+            },
+            {
+                "id": 3,
+                "listenCount": 9100000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002yYiGt13o401.jpg",
+                "songList": [
+                    {
+                        "singername": "The Chainsmokers/Bebe Rexha",
+                        "songname": "Call You Mine"
+                    },
+                    {
+                        "singername": "Olly Murs/摩登兄弟/CORSAK",
+                        "songname": "That Girl (CORSAK Remix)"
+                    },
+                    {
+                        "singername": "Katy Perry",
+                        "songname": "Never Really Over"
+                    }
+                ],
+                "topTitle": "巅峰榜·欧美",
+                "type": 0
+            },
+            {
+                "id": 59,
+                "listenCount": 1920000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000040rkZ40TqEZx.jpg",
+                "songList": [
+                    {
+                        "singername": "李治廷",
+                        "songname": "若雪"
+                    },
+                    {
+                        "singername": "容祖儿",
+                        "songname": "勇气情歌"
+                    },
+                    {
+                        "singername": "谭咏麟/李幸倪",
+                        "songname": "千变万化"
+                    }
+                ],
+                "topTitle": "香港地区榜",
+                "type": 0
+            },
+            {
+                "id": 16,
+                "listenCount": 4058120,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000029ne3P3q880w.jpg",
+                "songList": [
+                    {
+                        "singername": "LEE HI (李遐怡)/B.I (金韩彬)",
+                        "songname": "NO ONE (Feat. B.I of iKON) (누구 없소)"
+                    },
+                    {
+                        "singername": "PKCZ(R)/CL (李彩琳)/Afrojack",
+                        "songname": "CUT IT UP"
+                    },
+                    {
+                        "singername": "BoA (宝儿)/넉살 (Nucksal)",
+                        "songname": "Feedback"
+                    }
+                ],
+                "topTitle": "巅峰榜·韩国",
+                "type": 0
+            },
+            {
+                "id": 60,
+                "listenCount": 19900000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000000H46K1WX5Ub.jpg",
+                "songList": [
+                    {
+                        "singername": "G.E.M. 邓紫棋",
+                        "songname": "来自天堂的魔鬼"
+                    },
+                    {
+                        "singername": "魏新雨",
+                        "songname": "余情未了"
+                    },
+                    {
+                        "singername": "王琪",
+                        "songname": "万爱千恩"
+                    }
+                ],
+                "topTitle": "抖音排行榜",
+                "type": 0
+            },
+            {
+                "id": 29,
+                "listenCount": 1980000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000lN95e3SEnly.jpg",
+                "songList": [
+                    {
+                        "singername": "鞠婧祎",
+                        "songname": "青城山下白素贞"
+                    },
+                    {
+                        "singername": "赵奕欢",
+                        "songname": "那么喜欢你"
+                    },
+                    {
+                        "singername": "花粥",
+                        "songname": "落霜"
+                    }
+                ],
+                "topTitle": "巅峰榜·影视金曲",
+                "type": 0
+            },
+            {
+                "id": 17,
+                "listenCount": 1762500,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000SUzLL482nPK.jpg",
+                "songList": [
+                    {
+                        "singername": "花澤香菜 (はなざわ かな)",
+                        "songname": "「Hello, Again ～昔からある場所～」from消滅都市 (TV size)"
+                    },
+                    {
+                        "singername": "GENERATIONS from EXILE TRIBE (放浪新世代 from 放浪一族)/THE RAMPAGE from EXILE TRIBE (ザ・ランページ・フロム・エグザイル・トライブ)",
+                        "songname": "SHOOT IT OUT"
+                    },
+                    {
+                        "singername": "majiko (まじ娘)",
+                        "songname": "WISH"
+                    }
+                ],
+                "topTitle": "巅峰榜·日本",
+                "type": 0
+            },
+            {
+                "id": 201,
+                "listenCount": 2000000,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001hHrzh1uq77N.jpg",
+                "songList": [
+                    {
+                        "singername": "汪苏泷",
+                        "songname": "耿 (《最好的我们》电影毕业季主题曲)"
+                    },
+                    {
+                        "singername": "蔡徐坤",
+                        "songname": "Hard To Get"
+                    },
+                    {
+                        "singername": "焦迈奇",
+                        "songname": "我的名字"
+                    }
+                ],
+                "topTitle": "巅峰榜·MV",
+                "type": 0
+            },
+            {
+                "id": 52,
+                "listenCount": 640920,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000PeJtf2k8hcm.jpg",
+                "songList": [
+                    {
+                        "singername": "赵政豪",
+                        "songname": "船帆"
+                    },
+                    {
+                        "singername": "街道办GDC/欧阳耀莹",
+                        "songname": "离开"
+                    },
+                    {
+                        "singername": "K邵庄",
+                        "songname": "长大前"
+                    }
+                ],
+                "topTitle": "巅峰榜·腾讯音乐人原创榜",
+                "type": 0
+            },
+            {
+                "id": 36,
+                "listenCount": 2076580,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000JfBmd2A6shq.jpg",
+                "songList": [
+                    {
+                        "singername": "朴爱源",
+                        "songname": "来自天堂的魔鬼"
+                    },
+                    {
+                        "singername": "麓七",
+                        "songname": "你的酒馆对我打了烊"
+                    },
+                    {
+                        "singername": "乐静",
+                        "songname": "我曾"
+                    }
+                ],
+                "topTitle": "巅峰榜·K歌金曲",
+                "type": 0
+            },
+            {
+                "id": 61,
+                "listenCount": 797825,
+                "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004LF5gr4evlFr.jpg",
+                "songList": [
+                    {
+                        "singername": "Ella陈嘉桦",
+                        "songname": "都几岁了"
+                    },
+                    {
+                        "singername": "MC HotDog/张震岳",
+                        "songname": "改变"
+                    },
+                    {
+                        "singername": "MC HotDog",
+                        "songname": "Hip Hop没有派对"
+                    }
+                ],
+                "topTitle": "台湾地区榜",
+                "type": 0
+            }
+        ]
+    }
+}
