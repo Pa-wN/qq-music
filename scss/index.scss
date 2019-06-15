@@ -92,7 +92,13 @@ header {
     }
   }
 }
-
+.first-loading {
+  margin-top: 50px;
+  text-align: center;
+  img {
+    width: 100px;
+  }
+}
 .main {
   > section {
     display: none;
@@ -547,6 +553,12 @@ header {
   overflow: hidden;
   color: #fff;
   width: 100%;
+  .lyric-loading {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+  }
   .lyric-list {
     transition: 0.2s;
     li {

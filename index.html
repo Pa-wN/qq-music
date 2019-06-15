@@ -31,7 +31,10 @@
             </li>
         </ul>
     </nav>
-    <main class="main">
+    <div class="first-loading">
+        <img src="./static/s_loading.gif" alt="">
+    </div>
+    <main class="main" style="display: none">
         <section class="recommend-view show" data-view='recommend'>
             <div class="slide-wrap"></div>
             <scetion class="radio-block">
@@ -94,6 +97,7 @@
             <div class="toggle-btn"></div>
         </div>
         <div class="lyric-wrap">
+            <p class="lyric-loading">歌词加载中...</p>
             <ul class="lyric-list">
             </ul>
         </div>
@@ -109,23 +113,11 @@
     <div class="loading">
         <img src="./static/icon_loading.gif" alt="正在加载">
     </div>
-    <script src="./scripts/slide.js"></script>
-    <script src="./scripts/tab.js"></script>
-    <script src="./scripts/lazyload.js"></script>
-    <script src="./scripts/loading.js"></script>
-
-    <script src="./scripts/progressBar.js"></script>
-    <script src="./scripts/music-url.js"></script>
-    <script src="./scripts/music-api.js"></script>
-    <script src="./scripts/lyric.js"></script>
-
-    <script src="./scripts/topList.js"></script>
-
-    <script src="./scripts/ranking.js"></script>
-    <script src="./scripts/recommend.js"></script>
-    <script src="./scripts/search.js"></script>
-    <script src="./scripts/player.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script>
+        !window.fetch && document.write('<script src="https://cdn.bootcss.com/fetch/2.0.3/fetch.min.js"><\/script>')
+    </script>
+    <!-- <script type="module" src="./script/app.js"></script> -->
+    <script src="./dist/app.js"></script>
 </body>
 
 </html>

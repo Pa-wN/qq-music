@@ -1,10 +1,10 @@
-class ProgressBar {
+export default class ProgressBar {
     constructor({ $el, songTime }) {
         this.$songTime = $el.querySelector('.song-time')
         this.$playTime = $el.querySelector('.play-time')
         this.$progress = $el.querySelector('.progress-bar-progress')
     }
-
+    
     onPlaying({ currentTime, songTime }) {
         this.$progress.style.width = `${currentTime / songTime * 100}%`
         currentTime = this.formatTime(currentTime)

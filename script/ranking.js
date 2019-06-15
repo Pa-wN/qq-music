@@ -1,9 +1,15 @@
-class Rank {
-    constructor({ topList: rankList }) {
+import { getRankData , getTopList} from './music-api.js'
+import topList from './topList.js'
+import lazyLoad from './lazyload.js'
+import loadingComp from './loading.js'
+
+export default class Rank {
+    constructor() {
         this.$el = document.querySelector('.rank-view');
         this.$list = document.querySelector("[data-rankList-view]")
-        this.initRank(rankList)
-
+        getRankData().then((json) => {
+            this.initRank(json.data.topList)
+        })
         this.$list.addEventListener('click', this.linkTopList.bind(this))
     }
     initRank(rankList) {
@@ -22,6 +28,7 @@ class Rank {
                 <div class="topic-more"></div>
             </li>`
         }, '')
+        lazyLoad(this.$list.querySelectorAll('[data-lazyload]'))  //懒加载
     }
     linkTopList(e) {
         let target = e.target
@@ -34,7 +41,7 @@ class Rank {
             var options = {}
             options.pic = res.topinfo.pic_v12
             options.songlist = res.songlist.map(i => i.data)
-            topListComp.resetTopList(options)
+            topList.resetTopList(options)
             loadingComp.hide()
         })
     }

@@ -1,4 +1,4 @@
-class Slider {
+export default class Slider {
     constructor({ $el : $elWrap, interval = 4000 , slides}) {
         this.$elWrap = $elWrap
         this.slides = slides

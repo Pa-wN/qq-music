@@ -1,4 +1,4 @@
-function initTab({link : $links, view : $view}) {
+export default function initTab({link : $links, view : $view}) {
     var currentEl = $links.firstElementChild
     $links.addEventListener('click',(event) => {
         if (event.target === currentEl) return;

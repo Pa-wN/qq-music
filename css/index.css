@@ -104,6 +104,12 @@ header {
       height: 2px;
       background: #31c27c; }
 
+.first-loading {
+  margin-top: 50px;
+  text-align: center; }
+  .first-loading img {
+    width: 100px; }
+
 .main > section {
   display: none; }
   .main > section.show {
@@ -494,6 +500,11 @@ header {
   overflow: hidden;
   color: #fff;
   width: 100%; }
+  .lyric-wrap .lyric-loading {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center; }
   .lyric-wrap .lyric-list {
     transition: 0.2s; }
     .lyric-wrap .lyric-list li {

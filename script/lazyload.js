@@ -1,5 +1,5 @@
-function lazyLoad(images) {
-    imgs = Array.from(images)
+export default function lazyLoad(images) {
+    var imgs = Array.from(images)
     if ('IntersectionObserver' in window) {
         var observe = new IntersectionObserver(
             function (entries) {

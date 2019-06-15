@@ -1,10 +1,23 @@
-class Recommend {
-    constructor({ slider, radioList, songList }) {
+import {getRecData, getRadioList} from './music-api.js'
+import Slider from './slide.js'
+import topLis from './topList.js'
+import lazyLoad from './lazyload.js'
+import loadingComp from './loading.js'
+
+export default class Recommend {
+    constructor() {
         this.$radio = document.querySelector("[data-radio-view]")
         this.$radio.addEventListener('click', this.linkRadioList.bind(this))
+        getRecData().then((json) => {
+            this.init(json.data)
+        })
+    }
+    init({slider, radioList, songList }) {
         this.randerSlider(slider);
         this.randerRadio(radioList);
         this.randerHot(songList)
+        document.querySelector('.first-loading').style.display = 'none';
+        document.querySelector('.main').style.display = 'block';
     }
     randerSlider(slides) {
         new Slider({
@@ -25,6 +38,7 @@ class Recommend {
             </div>
         </li>`
         }, '')
+        lazyLoad(this.$radio.querySelectorAll('[data-lazyload]'))  //懒加载
     }
     linkRadioList(e) {
         let target = e.target
@@ -45,7 +59,7 @@ class Recommend {
                 res.albummid = i.album.mid
                 return res
             })
-            topListComp.resetTopList(options)
+            topLis.resetTopList(options)
             loadingComp.hide()
         })
     }

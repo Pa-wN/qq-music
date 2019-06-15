@@ -36,3 +36,4 @@ class Toplist {
         this.$topList.classList.add('show')
     }
 }
+export default new Toplist()

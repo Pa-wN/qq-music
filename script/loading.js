@@ -9,3 +9,5 @@ class Loading {
         this.$el.style.display = 'none'
     }
 }
+
+export default new Loading()

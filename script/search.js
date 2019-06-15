@@ -1,4 +1,6 @@
-class Search {
+import {getSearchCon, getHotkey} from './music-api.js'
+
+export default class Search {
     constructor() {
         this.$searchInp = document.getElementById('searchInp')
         this.$clearBtn = document.getElementById('clearBtn')
@@ -17,11 +19,7 @@ class Search {
         this.$hotView.addEventListener('click', this.onHotKeyEntrust.bind(this))
 
         this.songData = null
-        this.getHotkey()
-    }
-    getHotkey() {
-        let getHotkey = fetch('http://localhost:3000/gethoukey')
-        getHotkey.then(res => res.json()).then((json) => {
+        getHotkey().then((json) => {
             this.randerHotKey(json.data)
         })
     }
@@ -124,7 +122,7 @@ class Search {
         this.$hotSearch.style.display = 'none'
         this.$searchCon.style.display = 'block'
         this.$loading.style.display = 'block'
-        this.getSearchCon(keyWord).then((json) => {
+        getSearchCon(keyWord).then((json) => {
             this.$loading.style.display = 'none'
             this.setStorage(keyWord)
             this.randerSearchList(json.data.song.list)
@@ -132,9 +130,7 @@ class Search {
             console.log(err)
         })
     }
-    getSearchCon(keyWord) {
-        return fetch(`http://localhost:3000/search?w=${keyWord}`).then(res => res.json())
-    }
+
 
     handleSingerName(singers) {
         if (singers.length === 1) return singers[0].name;
