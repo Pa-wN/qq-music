@@ -11,6 +11,7 @@ const LYRIC_URL = `https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric.fcg?g_tk=53
 const VKey = `https://c.y.qq.com/base/fcgi-bin/fcg_music_express_mobile3.fcg?g_tk=5381&hostUin=0&format=json&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq&needNewCode=0&cid=205361747&uin=0&songmid=__songmid__&filename=C400__songmid__.m4a&guid=2921477192`
 const TOPLIST_URL = `https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=__topId__&_=1512563984096`
 const RADIOLIST_URL = `https://u.y.qq.com/cgi-bin/musicu.fcg?-=getradiosonglist5088503485289602&g_tk=5381&loginUin=0&hostUin=0&format=json&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq.json&needNewCode=0&data={"songlist":{"module":"pf.radiosvr","method":"GetRadiosonglist","param":{"id":__id__,"firstplay":1,"num":10}},"comm":{"ct":24,"cv":0}}`
+const SONGLIST_URL = `https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg?type=1&json=1&utf8=1&onlysong=0&disstid=__id__&format=json&g_tk=5381&loginUin=0&hostUin=0&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq&needNewCode=0`
 const HEADER = {
     Accept: 'application / json',
     Origin: 'https://y.qq.com',
@@ -118,7 +119,18 @@ app.get('/getRadioList', async function handelFn(req, res) {
         res.json({ error: err.message })
     }
 })
-
+app.get('/getSonglist', async function handelFn(req, res) {
+    try {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.json(await requires({
+            uri: SONGLIST_URL.replace('__id__', encodeURIComponent(req.query.id)),
+            json: true,
+            headers: HEADER
+        }))
+    } catch (err) {
+        res.json({ error: err.message })
+    }
+})
 
 
 app.listen(3000, function () {

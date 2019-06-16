@@ -1,4 +1,4 @@
-import {getRecData, getRadioList} from './music-api.js'
+import {getRecData, getRadioList, getSongList} from './music-api.js'
 import Slider from './slide.js'
 import topLis from './topList.js'
 import lazyLoad from './lazyload.js'
@@ -7,7 +7,10 @@ import loadingComp from './loading.js'
 export default class Recommend {
     constructor() {
         this.$radio = document.querySelector("[data-radio-view]")
+        this.$songList = document.querySelector("[data-hotSongList-view]")
         this.$radio.addEventListener('click', this.linkRadioList.bind(this))
+        this.$songList.addEventListener('click', this.linkSongList.bind(this))
+
         getRecData().then((json) => {
             this.init(json.data)
         })
@@ -63,11 +66,26 @@ export default class Recommend {
             loadingComp.hide()
         })
     }
+    linkSongList(e) {
+        let target = e.target
+        let currentTarget = e.currentTarget
+        for (; !target.matches('.item') && target != currentTarget;) {
+            target = target.parentNode
+        }
+        loadingComp.show()
+        getSongList(target.dataset.id).then((res) => {
+            console.log(res)
+            var options = {}
+            options.pic = res.cdlist[0].logo
+            options.songlist =  res.cdlist[0].songlist
+            topLis.resetTopList(options)
+            loadingComp.hide()
+        })
+    }
     randerHot(songList) {
-        var $el = document.querySelector("[data-hot-view]")
-        $el.innerHTML = songList.reduce((prev, curr) => {
+        this.$songList.innerHTML = songList.reduce((prev, curr) => {
             return prev + `
-        <li class="item">
+        <li class="item" data-id="${curr.id}">
             <div class="item-media">
                 <img src="./static/loading.gif" alt="" data-lazyload="${curr.picUrl}">
                 <span class="play-btn"></span>
@@ -79,6 +97,7 @@ export default class Recommend {
             </div>
         </li>`
         }, '')
+        lazyLoad(this.$songList.querySelectorAll('[data-lazyload]'))  //懒加载
     }
     formatNum(num) {
         if (num > 10000) {

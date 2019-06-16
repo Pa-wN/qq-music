@@ -1,5 +1,5 @@
 const BASEURL = 'http://132.232.237.100:3000'
-
+// const BASEURL = 'http://localhost:3000'
 export function getRecUrl() {
     return `${BASEURL}/Rec`
 }
@@ -29,4 +29,11 @@ export function getRadioListUrl(id) {
 }
 export function getTopListUrl(topId) {
     return `${BASEURL}/getTopList?topId=${topId}`
+}
+export function getSearchUrl(keyWord) {
+    return `${BASEURL}/search?w=${keyWord}`
+}
+
+export function getSongListUrl(id) {
+    return `${BASEURL}/getSonglist?id=${id}`
 }
